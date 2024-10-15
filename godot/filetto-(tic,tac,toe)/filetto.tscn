@@ -1,0 +1,176 @@
+[gd_scene load_steps=8 format=3 uid="uid://d1mjrcm7bx4dd"]
+
+[ext_resource type="Texture2D" uid="uid://b8scjlinplfrn" path="res://ACNH_Multicolour_v2_[1366x768].jpg" id="1_0qjqg"]
+[ext_resource type="Script" path="res://filetto.gd" id="1_cl1c2"]
+[ext_resource type="Texture2D" uid="uid://e413g1myjbwx" path="res://griglia_filetto.png" id="1_qcd3n"]
+[ext_resource type="Script" path="res://buttonsGrid.gd" id="3_2uvk7"]
+[ext_resource type="Texture2D" uid="uid://ccgrux2wo66av" path="res://o_filetto.png" id="3_eyd0u"]
+[ext_resource type="Texture2D" uid="uid://o6625af66w1v" path="res://x_filetto.png" id="5_5qm8g"]
+[ext_resource type="Script" path="res://buttonGrid.gd" id="6_gflg2"]
+
+[node name="filetto" type="Node2D"]
+position = Vector2(564, 319)
+script = ExtResource("1_cl1c2")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(11.5, 4.5)
+scale = Vector2(0.855783, 0.876302)
+texture = ExtResource("1_0qjqg")
+
+[node name="griglia" type="Sprite2D" parent="."]
+position = Vector2(-4, -4)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_qcd3n")
+
+[node name="giocatore1" type="Node2D" parent="."]
+
+[node name="nomeGiocatore" type="TextEdit" parent="giocatore1"]
+offset_left = -516.0
+offset_top = -129.0
+offset_right = -327.0
+offset_bottom = -21.0
+text = "Nome Giocatore 1"
+placeholder_text = "Giocatore1"
+editable = false
+
+[node name="scoreGiocatore" type="TextEdit" parent="giocatore1"]
+offset_left = -516.0
+offset_top = -63.0
+offset_right = -329.0
+offset_bottom = -21.0
+text = "25"
+placeholder_text = "Partite vinte"
+editable = false
+
+[node name="simboloGiocatore" type="Sprite2D" parent="giocatore1"]
+position = Vector2(-421.1, 80.215)
+scale = Vector2(0.149074, 0.149074)
+texture = ExtResource("5_5qm8g")
+
+[node name="giocatore2" type="Node2D" parent="."]
+
+[node name="nomeGiocatore" type="TextEdit" parent="giocatore2"]
+offset_left = 353.0
+offset_top = -127.0
+offset_right = 542.0
+offset_bottom = -19.0
+text = "Nome Giocatore 2"
+placeholder_text = "Giocatore1"
+editable = false
+
+[node name="scoreGiocatore" type="TextEdit" parent="giocatore2"]
+offset_left = 353.0
+offset_top = -61.0
+offset_right = 540.0
+offset_bottom = -19.0
+text = "34"
+placeholder_text = "Partite vinte"
+editable = false
+
+[node name="simboloGiocatore" type="Sprite2D" parent="giocatore2"]
+position = Vector2(446.77, 80.215)
+scale = Vector2(0.149074, 0.149074)
+texture = ExtResource("3_eyd0u")
+
+[node name="buttons" type="Node2D" parent="."]
+position = Vector2(-564, -319)
+script = ExtResource("3_2uvk7")
+
+[node name="Button1" type="Button" parent="buttons"]
+offset_left = 297.0
+offset_top = 52.0
+offset_right = 462.0
+offset_bottom = 218.0
+script = ExtResource("6_gflg2")
+
+[node name="Sprite2D" type="Sprite2D" parent="buttons/Button1"]
+position = Vector2(82.5, 82.5)
+scale = Vector2(0.149074, 0.149074)
+
+[node name="Button2" type="Button" parent="buttons"]
+offset_left = 476.0
+offset_top = 53.0
+offset_right = 641.0
+offset_bottom = 219.0
+script = ExtResource("6_gflg2")
+
+[node name="Sprite2D" type="Sprite2D" parent="buttons/Button2"]
+position = Vector2(82.5, 82.5)
+scale = Vector2(0.149074, 0.149074)
+
+[node name="Button3" type="Button" parent="buttons"]
+offset_left = 653.0
+offset_top = 52.0
+offset_right = 818.0
+offset_bottom = 218.0
+script = ExtResource("6_gflg2")
+
+[node name="Sprite2D" type="Sprite2D" parent="buttons/Button3"]
+position = Vector2(82.5, 82.5)
+scale = Vector2(0.149074, 0.149074)
+
+[node name="Button4" type="Button" parent="buttons"]
+offset_left = 299.0
+offset_top = 230.0
+offset_right = 464.0
+offset_bottom = 396.0
+script = ExtResource("6_gflg2")
+
+[node name="Sprite2D" type="Sprite2D" parent="buttons/Button4"]
+position = Vector2(82.5, 82.5)
+scale = Vector2(0.149074, 0.149074)
+
+[node name="Button5" type="Button" parent="buttons"]
+offset_left = 477.0
+offset_top = 231.0
+offset_right = 642.0
+offset_bottom = 397.0
+script = ExtResource("6_gflg2")
+
+[node name="Sprite2D" type="Sprite2D" parent="buttons/Button5"]
+position = Vector2(82.5, 82.5)
+scale = Vector2(0.149074, 0.149074)
+
+[node name="Button6" type="Button" parent="buttons"]
+offset_left = 656.0
+offset_top = 231.0
+offset_right = 821.0
+offset_bottom = 397.0
+script = ExtResource("6_gflg2")
+
+[node name="Sprite2D" type="Sprite2D" parent="buttons/Button6"]
+position = Vector2(82.5, 82.5)
+scale = Vector2(0.149074, 0.149074)
+
+[node name="Button7" type="Button" parent="buttons"]
+offset_left = 301.0
+offset_top = 409.0
+offset_right = 466.0
+offset_bottom = 575.0
+script = ExtResource("6_gflg2")
+
+[node name="Sprite2D" type="Sprite2D" parent="buttons/Button7"]
+position = Vector2(82.5, 82.5)
+scale = Vector2(0.149074, 0.149074)
+
+[node name="Button8" type="Button" parent="buttons"]
+offset_left = 479.0
+offset_top = 409.0
+offset_right = 644.0
+offset_bottom = 575.0
+script = ExtResource("6_gflg2")
+
+[node name="Sprite2D" type="Sprite2D" parent="buttons/Button8"]
+position = Vector2(82.5, 82.5)
+scale = Vector2(0.149074, 0.149074)
+
+[node name="Button9" type="Button" parent="buttons"]
+offset_left = 656.0
+offset_top = 407.0
+offset_right = 821.0
+offset_bottom = 573.0
+script = ExtResource("6_gflg2")
+
+[node name="Sprite2D" type="Sprite2D" parent="buttons/Button9"]
+position = Vector2(82.5, 82.5)
+scale = Vector2(0.149074, 0.149074)
